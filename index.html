@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio - Mochamad Dzikra Rahayu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="home">
+        <h1>Mochamad Dzikra Rahayu</h1>
+        <p>Junior Web Developer | Tech Analys</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="assets/me.jpeg" alt="Dzikra's Photo" class="profile-img">
+        <p>Halo! Saya adalah seorang Mahasiswa yang sedang mendalami pemrograman web.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Sublime Text Mastery</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Website Portofolio Pertama</h3>
+            <p>Proyek praktikum menggunakan HTML, CSS, dan JS murni.</p>
+        </div>
+    </section>
+
+<section id="photography">
+    <h2>My Photography</h2>
+    <p>Klik foto di bawah untuk mengubah wallpaper website!</p>
+    
+    <div class="gallery">
+        <img src="assets/foto1.jpg" alt="Karya 1" onclick="changeWallpaper(this.src)">
+        <img src="assets/foto2.jpg" alt="Karya 2" onclick="changeWallpaper(this.src)">
+        <img src="assets/foto3.jpg" alt="Karya 3" onclick="changeWallpaper(this.src)">
+    </div>
+</section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: dzikrarahayu212@gmail.com</p>
+        <button onclick="showMessage()">Klik Saya</button>
+    </section>
+
+    <script src="js/script.js"></script>
+
+<img src="assets/rubik.png" alt="Rubik Cube" class="floating-rubik">
+
+    <script src="js/script.js"></script>
+</body>
+<footer>
+        <div class="footer-content">
+            <h3>Hubungi Saya</h3>
+            <p>Silakan ikuti sosial media saya di bawah ini:</p>
+            <div class="socials">
+                <a href="https://instagram.com/dzikra_rahayu" target="_blank">Instagram</a> | 
+                <a href="https://github.com/DzikKun" target="_blank">GitHub</a> | 
+                <a href="https://www.linkedin.com/in/dzikra-rahayu-547700325?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mochamad Dzikra Rahayu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</html>
