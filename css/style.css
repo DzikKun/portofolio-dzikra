@@ -5,6 +5,20 @@
     box-sizing: border-box;
 }
 
+/* Spasi antar judul dan deskripsi project */
+h3 {
+    margin-top: 32px;
+}
+
+h3:first-child {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 24px;
+}
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
