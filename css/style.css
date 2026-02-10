@@ -1,11 +1,9 @@
-/* Reset dasar */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Spasi antar judul dan deskripsi project */
 h3 {
     margin-top: 32px;
 }
@@ -28,22 +26,21 @@ body {
 
     /* Pengaturan Wallpaper */
     background-image: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.85)), url('../assets/wallpaper.jpg');
-    background-size: cover;        /* Foto menutupi seluruh layar */
-    background-position: center;   /* Foto selalu di tengah */
-    background-attachment: fixed;  /* Wallpaper diam saat di-scroll (Efek Parallax) */
+    background-size: cover;       
+    background-position: center;  
+    background-attachment: fixed;  
     background-repeat: no-repeat;
 
 
 }
 
 body {
-    /* ... kode background-image yang kemarin ... */
+
     background-attachment: fixed;
     background-size: cover;
-    transition: background-image 0.5s ease-in-out; /* Transisi halus 0.5 detik */
+    transition: background-image 0.5s ease-in-out;
 }
 
-/* Tambahkan ini agar kursor berubah jadi jari saat diarahkan ke foto galeri */
 .gallery img {
     cursor: pointer;
 }
@@ -56,27 +53,26 @@ header {
 }
 
 header h1 {
-    color: #a67c52; /* Aksen warna Coklat */
+    color: #a67c52;
 }
 
 section {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background: #1a1a1a; /* Abu-abu gelap */
+    background: #1a1a1a; 
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
 h2 {
-    border-bottom: 2px solid #a67c52; /* Garis bawah Coklat */
+    border-bottom: 2px solid #a67c52; 
     display: inline-block;
     margin-bottom: 20px;
     padding-bottom: 5px;
     color: #a67c52;
 }
 
-/* Styling Galeri Foto */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -87,36 +83,33 @@ h2 {
 .gallery img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Agar foto tidak gepeng */
+    object-fit: cover; 
     border-radius: 8px;
     transition: transform 0.3s ease;
     border: 2px solid #333;
 }
 
 .gallery img:hover {
-    transform: scale(1.05); /* Efek zoom saat kursor di atas foto */
-    border-color: #a67c52; /* Border berubah Coklat saat hover */
+    transform: scale(1.05); 
+    border-color: #a67c52; 
 }
 
-/* Mengatur Foto Profil agar ke tengah */
 .profile-img {
-    display: block;       /* Mengubah gambar jadi blok agar bisa diatur marginnya */
-    margin: 20px auto;    /* Atas-bawah 20px, Kiri-Kanan otomatis (tengah) */
-    width: 180px;         /* Ukuran foto */
-    height: 180px;        /* Harus sama dengan width untuk hasil bulat sempurna */
-    object-fit: cover;    /* Agar foto tidak lonjong */
-    border-radius: 50%;   /* Membuat foto jadi bulat */
-    border: 3px solid #a67c52; /* Frame coklat agar senada */
+    display: block;       
+    margin: 20px auto;    
+    width: 180px;         
+    height: 180px;        
+    object-fit: cover;    
+    border-radius: 50%;   
+    border: 3px solid #a67c52; 
 }
 
-/* Memastikan teks di About Me juga ke tengah */
 #about p {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
 }
 
-/* Definisikan Animasi */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -128,7 +121,6 @@ h2 {
     }
 }
 
-/* Pasang Animasi ke elemen */
 header, section {
     animation: fadeInUp 1s ease-out;
 }
@@ -140,38 +132,33 @@ header, section {
 }
 
 .profile-img {
-    /* ... kode yang lama tetap ada ... */
-    animation: pulse 2s infinite; /* Animasi berjalan selamanya */
+    animation: pulse 2s infinite; 
 }
 
-/* Styling Rubik Melayang */
 .floating-rubik {
-    position: fixed;      /* Kunci posisi di layar (tidak ikut hilang saat scroll) */
-    bottom: 40px;         /* Jarak dari bawah layar */
-    right: 40px;          /* Jarak dari kanan layar */
-    width: 100px;         /* Ukuran rubik, sesuaikan dengan seleramu */
-    z-index: 9999;        /* Memastikan rubik berada di atas elemen lain */
-    filter: drop-shadow(5px 15px 10px rgba(0,0,0,0.5)); /* Efek bayangan */
-    pointer-events: none; /* Supaya rubik tidak menghalangi kursor saat mau klik tombol di bawahnya */
+    position: fixed;     
+    bottom: 40px;        
+    right: 40px;         
+    width: 100px;         
+    z-index: 9999;        
+    filter: drop-shadow(5px 15px 10px rgba(0,0,0,0.5)); 
+    pointer-events: none; 
     
-    /* Pasang Animasi */
     animation: floatRotate 6s ease-in-out infinite;
 }
 
-/* Animasi Gabungan: Naik-Turun + Berputar Sedikit */
 @keyframes floatRotate {
     0% {
         transform: translateY(0) rotate(0deg);
     }
     50% {
-        transform: translateY(-20px) rotate(15deg); /* Melayang naik & miring sedikit */
+        transform: translateY(-20px) rotate(15deg); 
     }
     100% {
         transform: translateY(0) rotate(0deg);
     }
 }
 
-/* Responsif: Perkecil rubik jika dibuka di HP agar tidak menutupi layar */
 @media (max-width: 600px) {
     .floating-rubik {
         width: 60px;
@@ -189,15 +176,15 @@ footer {
 }
 
 .socials a {
-    color: #a67c52; /* Link sosmed warna Coklat */
+    color: #a67c52; 
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
 }
 
 button {
-    background: #a67c52; /* Tombol warna Coklat */
-    color: #fff;         /* Teks putih agar kontras */
+    background: #a67c52; 
+    color: #fff;         
     font-weight: bold;
     padding: 10px 25px;
     border: none;
@@ -207,6 +194,7 @@ button {
 }
 
 button:hover {
-    background: #8b6542; /* Coklat sedikit lebih gelap saat ditekan */
+    background: #8b6542; 
 
 }
+
