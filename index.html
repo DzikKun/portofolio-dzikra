@@ -3,88 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Portofolio - Mochamad Dzikra Rahayu</title>
+    <title>DzikKun | Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">DzikKun</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <header id="home">
-        <h1>Mochamad Dzikra Rahayu</h1>
-        <p>Junior Web Developer | Tech Analys</p>
+    <header class="hero-landscape">
+        <div class="hero-text-large">
+            <p class="hero-category">FRONT-END DEVELOPER</p>
+            <h1 class="reveal-text">MOCHAMAD <br> DZIKRA</h1>
+            <p class="sub-text">JUNIOR WEB DEVELOPER / TECH ANALYS</p>
+            <a href="projects.html" class="btn-primary">Lihat Karya Saya</a>
+        </div>
+        <div class="hero-image-frame">
+            <img src="assets/me.jpeg" alt="my photo">
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="assets/me.jpeg" alt="Dzikra's Photo" class="profile-img">
-        <p>Halo! Saya adalah seorang Mahasiswa yang sedang mendalami pemrograman web.</p>
-    </section>
+    <img src="assets/rubik.png" alt="Rubik Cube" class="floating-rubik">
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>C/C++ Language</li>
-            <li>JavaScript</li>
-            <li>Sublime Text Mastery</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Website Portofolio Pertama</h3>
-            <p>Proyek praktikum menggunakan HTML, CSS, dan JS murni.</p>
-            
-            <h3>Singular Value Decomposition</h3>
-            <p>Membuat program kopresi gambar ke dalam ukuran file yang dapat disesuaikan</p>
-            
-            <h3>West Java Students leader Summit (WJSLS)</h3>
-            <p>Menjadi wakil ketua pelaksana acara tahunan pengembangan kepemimpinan, kolaborasi, dan wawasan bagi ribuan pelajar SMA/SMK/MA se-Jawa Barat.</p>
-            <h3></h3>
-            <p></p>
-            
-
-
-        </div>
-    </section>
-
-<section id="photography">
-    <h2>My Photography</h2>
-    <p>A selection of photographs from my work.</p>
-    
-    <div class="gallery">
-        <img src="assets/foto1.jpg" alt="Karya 1" onclick="changeWallpaper(this.src)">
-        <img src="assets/foto2.jpg" alt="Karya 2" onclick="changeWallpaper(this.src)">
-        <img src="assets/foto3.jpg" alt="Karya 3" onclick="changeWallpaper(this.src)">
-    </div>
-</section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: dzikrarahayu212@gmail.com</p>
-        <button onclick="showMessage()">Klik Saya</button>
-    </section>
-
-    <script src="js/script.js"></script>
-
-<img src="assets/rubik.png" alt="Rubik Cube" class="floating-rubik">
-
-    <script src="js/script.js"></script>
-</body>
-<footer>
-        <div class="footer-content">
-            <h3>Hubungi Saya</h3>
-            <p>Silakan ikuti sosial media saya di bawah ini:</p>
-            <div class="socials">
-                <a href="https://instagram.com/dzikra_rahayu" target="_blank">Instagram</a> | 
-                <a href="https://github.com/DzikKun" target="_blank">GitHub</a> | 
-                <a href="https://www.linkedin.com/in/dzikra-rahayu-547700325?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
-            </div>
-        </div>
+    <footer>
         <div class="footer-bottom">
             <p>&copy; 2026 Mochamad Dzikra Rahayu. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+</body>
 </html>
