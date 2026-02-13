@@ -10,3 +10,13 @@ function changeWallpaper(imageSrc) {
     // Opsional: Beri notifikasi kecil
     console.log("Wallpaper berhasil diubah ke: " + imageSrc);
 }
+
+window.addEventListener("load", function() {
+    const loader = document.getElementById("loader");
+    
+    // Memberikan jeda sedikit agar transisi terasa smooth
+    setTimeout(() => {
+        loader.classList.add("loader-hidden");
+    }, 1000); // 1000ms = 1 detik jeda
+});
+
