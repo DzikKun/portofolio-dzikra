@@ -138,29 +138,28 @@ p { margin-bottom: 24px; }
     object-fit: cover;
 }
 
-/* 4. SECTIONS (Update Warna agar kontras dengan Navbar) */
+/* 4. SECTIONS (Untuk Page Selain Home) */
 section {
     max-width: 1100px;
     margin: 40px auto;
     padding: 40px 20px;
-    
-    /* Menggunakan warna cokelat gelap transparan */
-    background: rgba(35, 25, 20, 0.85); 
-    
-    /* Efek Blur agar wallpaper di belakang terlihat estetik */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    
-    /* Border halus untuk mempertegas batas kotak */
-    border: 1px solid rgba(166, 124, 82, 0.2); 
-    
+    background: #1a1a1a;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     animation: fadeInUp 1s ease-out;
+}
+
+h2 {
+    border-bottom: 2px solid #a67c52;
+    display: inline-block;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    color: #a67c52;
+    font-size: 2rem;
 }
 
 /* 5. PROFIL & GALERI */
@@ -749,4 +748,3 @@ body.about-page::before {
 .floating-cards-container {
     z-index: -1; 
 }
-
